@@ -16,14 +16,29 @@ const isPalindrom = (string) => {
   }
   return false;
 };
+isPalindrom('топот');
+isPalindrom('ДовОд');
+isPalindrom('Кекс');
+isPalindrom('Лёша на полке клопа нашёл ');
 //Дополнительное задание
 const isNumber = (string) => {
   string = string.toString();
   let stringNew = '';
   for (let i = 0; i < string.length; i++) {
-        if (parseInt(string[i], 10) >= 0) {
+    if (parseInt(string[i], 10) >= 0) {
       stringNew += string[i];
     }
   }
   return parseInt(stringNew, 10);
 };
+
+isNumber('2023 год');
+isNumber('ECMAScript 2022');
+isNumber('1 кефир, 0.5 батона');
+isNumber('агент 007');
+isNumber('а я томат');
+
+
+isNumber(2023);
+isNumber(-1);
+isNumber(1.5);
