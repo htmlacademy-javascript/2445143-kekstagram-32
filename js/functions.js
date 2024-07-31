@@ -21,7 +21,7 @@ const isNumber = (string) => {
   string = string.toString();
   let stringNew = '';
   for (let i = 0; i < string.length; i++) {
-    if (parseInt(string[i], 10) >= 0) {
+        if (parseInt(string[i], 10) >= 0) {
       stringNew += string[i];
     }
   }
